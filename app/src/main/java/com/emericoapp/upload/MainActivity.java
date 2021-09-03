@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
             Log.i("uris",uri.getPath());
 
-            list.add(prepareFilePart("file", uri));
+            list.add(prepareFilePart("Dagboek[imageFiles][]", uri));
         }
 
         serviceInterface = ApiConstants.getClient().create(ServiceInterface.class);

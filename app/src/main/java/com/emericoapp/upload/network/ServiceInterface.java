@@ -13,6 +13,6 @@ import retrofit2.http.Part;
 public interface ServiceInterface {
 
     @Multipart
-    @POST(ApiConstants.ENDPOINT+"NewsFeed/uploadImage")
+    @POST(ApiConstants.ENDPOINT+"/dagboek/create")
     Call<ApiModel> uploadNewsFeedImages(@Part List<MultipartBody.Part> files);
 }
